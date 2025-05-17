@@ -1,0 +1,350 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav h2 {
+  display: flex;
+  align-items: center;
+}
+
+nav h2 img {
+  width: 120px;
+  height: auto;
+}
+
+nav {
+	background: #ffffff;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+nav a {
+  color: black;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+  padding-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #ffffff;
+}
+
+nav ul li ul {
+  list-style: none;
+	margin: 0;
+  padding-left: 0;
+  display: none;
+  align-items: center;
+	justify-content: space-around;
+}
+
+.cs-dossier {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 40px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cs-dossier-left {
+  flex: 1;
+}
+
+.cs-dossier-left h2 {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cs-dossier-right {
+  flex: 1;
+}
+
+.cs-dossier-right img {
+  max-width: 100%;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cs-dossier-right p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.popular-food-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-optical-sizing: auto;
+  font-weight: 800px;
+  font-size: 32px;
+  font-style: normal;
+}
+
+.popular-food {
+  font-family: "Playwrite DK Loopet", cursive;
+}
+
+.main-background {
+  align-items: center;
+  background: #FFFFFF;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 228, 171, 1) 37%, rgba(253, 187, 45, 1) 71%);
+}
+
+.cs-footer {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cs-footer-text {
+  flex: 1;
+  align-items: center;
+  height: auto;
+}
+
+
+footer {
+  text-align: center;
+	background: #ddd;
+	color: #000;
+}
+
+.center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.booking-container {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ffdd00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0px) {
+  #hero-1785 {
+    /* 200px - 300px - leaving extra space for the navigation */
+    padding: clamp(100px, 20vw, 200px) 16px;
+    /* prevents the topper line from causing an overflow */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1785 .cs-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+  #hero-1785 .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+  }
+  #hero-1785 .cs-title {
+    /* 49px - 84px */
+    font-size: clamp(48px, 6vw, 90px);
+    line-height: 1.5;
+    
+  }
+  #hero-1785 .cs-title,
+  #hero-1785 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #hero-1785 .cs-text {
+    margin-bottom: 32px;
+  }
+  #hero-1785 .cs-button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  #hero-1785 .cs-button-solid {
+    font-size: 16px;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(46px, 5.5vw, 56px);
+    text-align: center;
+    text-decoration: none;
+    min-width: 200px;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 24px;
+    background-color: var(--primary);
+    color: var(--buttonTextColor);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1785 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #hero-1785 .cs-button-solid:hover {
+    color: var(--buttonTextColorBefore);
+  }
+  #hero-1785 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+
+  #hero-1785 .cs-graphic {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-width: unset;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+  }
+
+
+  #hero-1785 .cs-graphic.flipped {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    min-width: unset;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: 0;
+    transform: translateX(-50%) rotate(180deg);
+  }
+
+  #hero-1785 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-1785 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #hero-1785 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Large Desktop - 1920px */
+@media only screen and (min-width: 1920px) {
+  #hero-1785 {
+    padding-bottom: 14vw;
+  }
+}
+
+#products {
+  text-align: center;
+}
+
+#products a {
+  text-decoration: none;
+}
+
+#products img {
+  vertical-align:middle;
+  margin-bottom:50px;
+  width:300px;
+  height:300px;
+}
+
+header, nav, main, footer {
+	display: flex;
+	flex-direction: column;
+}
+

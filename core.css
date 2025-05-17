@@ -1,0 +1,68 @@
+:root {
+    --primary: #ffdd00;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --buttonTextColor: #000000;
+    --buttonTextColorBefore: #ffdd00;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(13px, 1.6vw, 16px);
+    /* 31px - 49px */
+    --headerFontSize: clamp(31px, 3.9vw, 49px);
+    --bodyFontSize: 16px;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(60px, 7.82vw, 100px) 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.cs-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 19.2px; /* 1.2em × 16px */
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 4px;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 58.8px; /* 1.2em × 49px (max size) */
+    text-align: inherit;
+    max-width: 900px;
+    margin: 0 0 16px 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 24px; /* 1.5em × 16px */
+    text-align: inherit;
+    width: 100%;
+    max-width: 650px;
+    margin: 0;
+    color: var(--bodyTextColor);
+}

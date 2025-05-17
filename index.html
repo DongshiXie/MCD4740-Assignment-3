@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="core.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Pier 35 bar and grill</title>
+  </head>
+  <body>
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
+    <nav>
+			<h2><img src="images/logo.png" alt="Logo"></h2>
+			<ul>
+				<li>
+          <h3><a href="#">Home</a></h3>
+        </li>
+				<li>
+          <h3><a href="#">Menu</a></h3>
+          <ul class="submenu">
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Starters</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
+            <li><a href="#">Dessert</a></li>
+          </ul>
+        </li>
+				<li>
+          <h3><a href="#">Function</a></h3>
+        </li>
+				<li>
+          <h3><a href="#">Whats On</a></h3>
+        </li>
+				<li>
+          <h3><a href="#">Contact</a></h3>
+        </li>
+			</ul>
+		</nav>
+    <section id="hero-1785">      
+      <img class="cs-graphic flipped" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">A Seaside Restaurant In Melbourne</span>
+          <h1 class="cs-title">Pier 35 bar and grill</h1>
+          <p class="cs-text">Taste delicious food and spend happy time with your family</p>
+          <a href="#booking-form" class="cs-button-solid cs-button1">Booking here</a>
+        </div>
+      </div>
+
+        <!-- Background Image -->
+      <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="images/background600.png">
+        <source media="(min-width: 601px)" srcset="images/background601.png">
+        <img src="images/background601.png" alt="background">
+      </picture>
+
+      <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+    </section>
+    <main class="main-background">
+      <div class="cs-dossier">
+        <div class="cs-dossier-left">
+          <h2>Pier 35 Dossier</h2>
+        </div>
+        <div class="cs-dossier-right">
+          <img src="images/dossier.png" alt="Pier 35 Dining">
+          <p>Have your next event at Melbourne's most affordable waterfront venue. Whether you're planning a wedding, birthday, corporate event or anything in between, Pier 35 Bar and Grill has that special touch that delivers excellence every time. Our flexible dining room can be set up to suit your requirements with three sections to our venue including a deck, a beer garden and dining room with stunning water views.</p>
+        </div>
+      </div>
+      
+      <div class="popular-food">
+        <h2 class="popular-food-text">Popular food</h2>
+        <p id="products">
+          <a href="images/food/Pan Roasted Deep Sea Dory Fillets.png" data-fancybox="gallery" data-caption="Pan Roasted Deep Sea Dory Fillets">
+            <img src="images/food/Pan Roasted Deep Sea Dory Fillets.png" alt="">
+          </a>
+          <a href="images/food/Steak.png" data-fancybox="gallery" data-caption="Steak">
+            <img src="images/food/Steak.png" alt="">
+          </a>
+          <a href="images/food/Seafood Paella.png" data-fancybox="gallery" data-caption="Seafood Paella">
+            <img src="images/food/Seafood Paella.png" alt="">
+          </a>
+          <a href="images/food/Tapas.png" data-fancybox="gallery" data-caption="Tapas">
+            <img src="images/food/Tapas.png" alt="">
+          </a>
+        </p>
+      </div>
+
+      <div id="booking-form" class="booking-container">
+        <h2>Select your reservation time</h2>
+        <label for="date">Date: </label>
+        <input type="date" id="date">
+        <label for="time">Time: </label>
+        <input type="time" id="time">
+        <button onclick="submitBooking()">Submit</button>
+        <div id="result"></div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script src="script.js" ></script>
+    </main>
+    
+  </body>
+  <footer>
+    <div class="cs-footer">
+      <p class="cs-footer-text">Location
+        <br><a href="https://www.google.com.au/maps/place/Pier+35+Bar+%26+Grill/@-37.823866,144.9039388,17z/data=!3m2!4b1!5s0x6ad66770491772d9:0x4346b765f918958f!4m6!3m5!1s0x6ad66771d1596d39:0x1d2544ef2a7ab2cb!8m2!3d-37.823866!4d144.9065137!16s%2Fg%2F1hc1htb3b?authuser=1&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D">263-329 Lorimer Street Port Melbourne</a></p>
+      <p class="cs-footer-text">Contact us<br>9646 0606</p>
+      <p class="cs-footer-text">Opening hours<br>10 am-3:30 pm, 5-8:30 pm</p>
+      <p class="cs-footer-text">
+        Connect with us
+        <br><a href="https://x.com/Pier35BarGrill">Twitter</a>
+        <br><a href="https://www.instagram.com/pier35barandgrill?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+        <br><a href="https://www.facebook.com/Pier35barandgrill/">Facebook</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    $( 'nav ul li h3' ). click( function(){ $( 'nav ul li ul' ).slideToggle(); } );
+	</script>
+</html>
